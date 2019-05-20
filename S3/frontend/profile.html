@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile</title>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script  src="js/jquery.params.js"></script>
+    <script  src="js/main.js"></script>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Travelix Project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap4/bootstrap.min.css">
+    <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/offers_styles.css">
+    <link rel="stylesheet" type="text/css" href="css/offers_responsive.css">
+
+</head>
+
+<body>
+<input type="email" required autocomplete="off" id="uid" style="display: none;" />
+<input type="email" required autocomplete="off" id="ulati" style="display: none;" />
+<input type="email" required autocomplete="off" id="ulongi" style="display: none;" />
+
+<div class="home">
+
+    <!-- Header -->
+
+    <header class="header">
+
+    <!-- Top Bar -->
+
+    <div class="top_bar_main">
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex flex-row">
+                    <div class="phone">+45 345 3324 56789</div>
+                    <div class="user_box ml-auto">
+                        <!--<div class="user_box_login user_box_link"><a href="profile.html" id="usrn">name</a></div>-->
+                        <div class="user_box_login user_box_link"><a id="signOut" href="signin.html">Logout</a></div>
+                    </div><div class="social">
+                    <ul class="social_list">
+                        <li class="social_list_item"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                        <li class="social_list_item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li class="social_list_item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li class="social_list_item"><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                        <li class="social_list_item"><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+                        <li class="social_list_item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Main Navigation -->
+
+        <nav class="main_nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col main_nav_col d-flex flex-row align-items-center justify-content-start">
+                        <div class="logo_container">
+                            <div class="logo"><a href="#"><img src="images/logo.png" alt="">Go Travel</a></div>
+                        </div>
+                        <div class="main_nav_container ml-auto">
+                            <ul class="main_nav_list">
+                                <li class="main_nav_item"><a href="main.html" id="main">home</a></li>
+                                <li class="main_nav_item"><a href="post.html" id="post">post</a></li>
+                                <li class="main_nav_item"><a href="memory.html" id="note">memory</a></li>
+                                <li class="main_nav_item"><a href="social.html" id="filter">social</a></li>
+                                <li class="main_nav_item"><a href="recommend.html" id="friends">recommendation</a></li>
+                                <li class="main_nav_item"><a href="profile.html" id="profile">profile</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- Home -->
+
+    <div class="home">
+        <div class="home_background parallax-window" data-parallax="scroll" data-image-src="images/single_background.jpg"></div>
+        <div class="home_content">
+            <div class="home_title">Profile</div>
+        </div>
+    </div>
+
+
+    <div class="super_container">
+    <div class="jumbotron">
+        <div class="panel panel-default">
+  <!-- Default panel contents -->
+        <div class="panel-heading">Biography</div>
+
+  <!-- Table -->
+          <table class="table">
+            <thead>
+                <tr>
+                    <th>user id:</th>
+                    <th id="userid"></th>
+                </tr>
+                <tr>
+                    <th>username:</th>
+                    <th id="username"></th>
+                </tr>
+                <tr>
+                    <th>email:</th>
+                    <th id="useremail"></th>
+                </tr>
+                <tr>
+                    <th>short description:</th>
+                    <th id="userbio"></th>
+                </tr>
+            </thead>
+          </table>
+        </div>
+    
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">Wishlist</div>
+
+            <!-- Table -->
+            <table class="table">
+                <thead id="wishlist">
+                </thead>
+            </table>
+        </div>
+
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="css/bootstrap4/popper.js"></script>
+<script src="css/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/colorbox/jquery.colorbox-min.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="js/blog_custom.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="css/bootstrap4/popper.js"></script>
+<script src="css/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/colorbox/jquery.colorbox-min.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="js/blog_custom.js"></script>
+<script src="plugins/colorbox/jquery.colorbox-min.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="js/blog_custom.js"></script>
+
+<script src="js/vendor/jquery-3.1.0.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/vendor/aws-cognito-sdk.min.js"></script>
+<script src="js/vendor/amazon-cognito-identity.min.js"></script>
+<script src="https://js.arcgis.com/4.3/"></script>
+
+<script src="js/offers_custom.js"></script> 
+<script src="js/config.js"></script>
+<script src="js/cognito-auth.js"></script>
+<script src="js/getProfile.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>New Post</title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <!--<script src="js/jquery.params.js"></script>-->
+    <script src="js/main.js"></script>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Travelix Project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap4/bootstrap.min.css">
+    <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!--<link rel="stylesheet" type="text/css" href="css/offers_styles.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="css/offers_responsive.css">-->
+    <link rel="stylesheet" type="text/css" href="css/contact_styles.css">
+    <link rel="stylesheet" type="text/css" href="css/contact_responsive.css">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/post-style.css">
+
+    <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <script src="js/map.js"></script>
+</head>
+
+<body>
+<!-- Header -->
+
+<header class="header">
+
+    <!-- Top Bar -->
+
+    <div class="top_bar_main">
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex flex-row">
+                    <div class="phone">+45 345 3324 56789</div>
+                    <div class="user_box ml-auto">
+                        <!--<div class="user_box_login user_box_link"><a href="profile.html" id="usrn">name</a></div>-->
+                        <div class="user_box_login user_box_link"><a id="signOut" href="signin.html">Logout</a></div>
+                    </div><div class="social">
+                    <ul class="social_list">
+                        <li class="social_list_item"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                        <li class="social_list_item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li class="social_list_item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li class="social_list_item"><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                        <li class="social_list_item"><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+                        <li class="social_list_item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+
+    <nav class="main_nav">
+        <div class="container">
+            <div class="row">
+                <div class="col main_nav_col d-flex flex-row align-items-center justify-content-start">
+                    <div class="logo_container">
+                        <div class="logo"><a><img src="images/logo.png" alt="">GoTravel</a></div>
+                    </div>
+                    <div class="main_nav_container ml-auto">
+                        <ul class="main_nav_list">
+                            <li class="main_nav_item"><a href="main.html" id="main">home</a></li>
+                            <li class="main_nav_item"><a href="post.html" id="post">post</a></li>
+                            <li class="main_nav_item"><a href="memory.html" id="note">memory</a></li>
+                            <li class="main_nav_item"><a href="social.html" id="filter">social</a></li>
+                            <li class="main_nav_item"><a href="recommend.html" id="friends">recommendation</a></li>
+                            <li class="main_nav_item"><a href="profile.html" id="profile">profile</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+</header>
+
+
+
+ <!--Home-->
+
+<div class="home">
+    <div class="home_background parallax-window" data-parallax="scroll" data-image-src="images/contact_background.jpg"></div>
+    <div class="home_content">
+        <div class="home_title">Post</div>
+    </div>
+</div>
+
+
+<!-- Contact -->
+<div class=".wrap">
+<div class="contact_form_section">
+    <div class="container">
+        <div class="row">
+            <!--<div class="col">-->
+                <!--<section class="site-section">-->
+                    <div class="container">
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <h1>New Story</h1>
+                            </div>
+                        </div>
+                        <div class="row blog-entries">
+                            <div class="col-md-12 col-lg-8 main-content">
+
+                                
+                                    <div class="row">
+                                        <div class="col-md-12 form-group">
+                                            <label for="title">Title</label>
+                                            <input type="text" id="title" class="form-control ">
+                                        </div>
+                                        <div class="col-md-12 form-group">
+                                            <label for="tags">Tags</label>
+                                            <ul class="tags">
+                                                <li class="off">Food</li>
+                                                <li class="off">Health & Active life</li>
+                                                <li class="off">Point of Interest</li>
+                                                <li class="off">Travel</li>
+                                                <li class="off">Shopping</li>
+                                                <li class="off">Arts & Entertainment</li>
+                                                <li class="off">Local services</li>
+                                                <li class="off">Outdoors</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col-md-12 form-group">
+                                            <label for="message">Write Story</label>
+                                            <textarea name="message" id="message" class="form-control " cols="30" rows="8"></textarea>
+                                        </div>
+                                        <div class="col-md-12 form-group">
+                                            <label for="image">Images</label>
+                                            <input id="img_input" type="file" accept="image/*" style="display: none;"/>
+                                            <label for="img_input" id="img_label" class="btn btn-outline-primary">+ Select From</label>
+                                            <div class="preview_box"></div>
+                                        </div>
+                                        <div class="col-md-6 form-group">
+                                            <label for="title">Latitude</label>
+                                            <input type="text" id="lat" class="form-control ">
+                                        </div>
+                                        <div class="col-md-6 form-group">
+                                            <label for="title">Longitude</label>
+                                            <input type="text" id="log" class="form-control ">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 form-group">
+                                            <input id="postSubmit" value="Post" class="btn btn-primary">
+                                        </div>
+                                    </div> 
+                               
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="css/bootstrap4/popper.js"></script>
+<script src="css/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/Isotope/isotope.pkgd.min.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+
+<script src="js/vendor/jquery-3.1.0.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/vendor/aws-cognito-sdk.min.js"></script>
+<script src="js/vendor/amazon-cognito-identity.min.js"></script>
+<script src="https://js.arcgis.com/4.3/"></script>
+
+<script src="js/offers_custom.js"></script>
+<script src="js/config.js"></script>
+<script src="js/cognito-auth.js"></script>
+<script src="js/postStory.js"></script>
+
+</body>
+
+</html>
